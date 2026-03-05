@@ -6,12 +6,14 @@ import Effect from "./hooks/Effect";
 import EffectWithApi from "./hooks/EffectWithApi";
 import Form from "./hooks/Form";
 import Hooks from "./hooks/hooks";
+import Ref from "./hooks/Ref";
 import State from "./hooks/State";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import {Routes,Route} from 'react-router-dom';
+
 const App = () => {
   return (
     <>
@@ -27,11 +29,10 @@ const App = () => {
        <Route path="form" element={<Form/>}/>
        <Route path="effect" element={<Effect/>}/>
        <Route path="effectwithapi" element={<EffectWithApi/>}/>
+       <Route path="useRef" element={<Ref/>}/>
       </Route>
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/signup" element={<Signup/>}></Route>
-      
-
       
     </Routes>
     </>
