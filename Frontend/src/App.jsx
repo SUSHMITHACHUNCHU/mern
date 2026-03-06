@@ -3,11 +3,11 @@ import Signup from "./auth/Signup";
 import Navbar from "./components/Navbar";
 import Parent from "./components/Parent";
 import Todo from "./components/Todo";
+import Hooks from "./hooks/Hooks";
 import Callback from "./hooks/Callback";
 import Effect from "./hooks/Effect";
 import EffectWithApi from "./hooks/EffectWithApi";
 import Form from "./hooks/Form";
-import Hooks from "./hooks/hooks";
 import Memo from "./hooks/Memo";
 import Reducer from "./hooks/Reducer";
 import Ref from "./hooks/Ref";
@@ -41,6 +41,7 @@ const App = () => {
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/signup" element={<Signup/>}></Route>
       <Route path="/todo" element={<Todo/>}></Route>
+
       
     </Routes>
     </>
